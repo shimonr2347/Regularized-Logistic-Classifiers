@@ -34,9 +34,9 @@ Microchip test results show a circular/complex distribution that cannot be separ
 
 ### The Impact of Regularization ($\lambda$):
 We analyze how the model's behavior changes with different regularization strengths:
-Underfitting ($\lambda = 100$): The model is too simple and fails to capture the trend.
-Optimal Fit ($\lambda = 1$): A smooth, circular boundary that generalizes well to new data.
-Overfitting ($\lambda = 0$): The model creates a complex, "wiggly" boundary to catch every outlier, failing to generalize.
+* Underfitting ($\lambda = 100$): The model is too simple and fails to capture the trend.
+* Optimal Fit ($\lambda = 1$): A smooth, circular boundary that generalizes well to new data.
+* Overfitting ($\lambda = 0$): The model creates a complex, "wiggly" boundary to catch every outlier, failing to generalize.
 
 ## 🧬 Mathematical Implementation
 ### The core of the project is the Regularized Cost Function:
@@ -44,8 +44,8 @@ $$J(\theta) = \frac{1}{m} \sum_{i=1}^m \left[ -y^{(i)}\log \left( h_\theta \left
 
 ### And the Gradient with Momentum:
 Compute gradient $\nabla J(\theta)$.
-Update Velocity: $v_t = \beta v_{t-1} + (1 - \beta)\nabla J(\theta)$.
-Update Weights: $\theta = \theta - \alpha v_t$.
+* Update Velocity: $v_t = \beta v_{t-1} + (1 - \beta)\nabla J(\theta)$.
+* Update Weights: $\theta = \theta - \alpha v_t$.
 
 
 ## 📈 Performance Metrics & ROC Analysis
@@ -57,8 +57,8 @@ To evaluate the models beyond simple accuracy, we implement Receiver Operating C
 | Microchip QA | 83.05% | 0.91 | Regularized Non-Linear ($L_2, \lambda=1$) |
 
 ## Interpretation:
-AUC = 0.97: An exceptional classifier with nearly perfect class separation.
-AUC = 0.91: An excellent classifier that effectively handles the noise and non-linearity of the microchip dataset.
+* AUC = 0.97: An exceptional classifier with nearly perfect class separation.
+* AUC = 0.91: An excellent classifier that effectively handles the noise and non-linearity of the microchip dataset.
 
 
 ## 📁 Project Structure
@@ -97,8 +97,13 @@ python logistic_regression.py
 
 ## 📈 Results
 *   **University Model**: ~89% Training Accuracy.
-*   **Microchip Model**: ~83% Training Accuracy (with $\lambda=1$).
+  <img width="992" height="750" alt="university_boundary" src="https://github.com/user-attachments/assets/f733137d-08d2-4e2f-b436-6995abb0696d" />
 *   **University Admission AUC**: 0.9735
+  <img width="867" height="622" alt="university_roc" src="https://github.com/user-attachments/assets/cb7e0405-c29d-4eac-a17f-fb2d65f8350d" />
+*   **Microchip Model**: ~83% Training Accuracy (with $\lambda=1$).
+  <img width="992" height="745" alt="microchip_boundary" src="https://github.com/user-attachments/assets/09353f91-e6b9-447f-a220-e2d59c36a999" />
 *   **Microchip QA AUC**: 0.9073
+  <img width="867" height="622" alt="microchip_roc" src="https://github.com/user-attachments/assets/f7d30eda-4353-454d-8219-fdec8d241ea1" />
+
 
 ---
