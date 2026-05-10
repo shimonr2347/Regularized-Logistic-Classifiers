@@ -62,6 +62,7 @@ AUC = 0.91: An excellent classifier that effectively handles the noise and non-l
 
 
 ## 📁 Project Structure
+```
 Regularized-Logistic-Classifiers/
 ├── data/
 │   ├── data1.txt             # University scores dataset
@@ -73,12 +74,13 @@ Regularized-Logistic-Classifiers/
 │   └── university_roc.png
 ├── logistic_regression.py    # Main implementation script
 └── README.md                 # Project documentation
+```
 
 ## 💻 Setup & Usage
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/LogReg-from-Scratch.git
+git clone https://github.com/shimonr2347/Regularized-Logistic-Classifiers.git
 ```
 
 ### Install dependencies:
