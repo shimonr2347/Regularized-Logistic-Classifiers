@@ -97,13 +97,13 @@ python logistic_regression.py
 
 ## 📈 Results
 *   **University Model**: ~89% Training Accuracy.
-  <img width="992" height="750" alt="university_boundary" src="https://github.com/user-attachments/assets/f733137d-08d2-4e2f-b436-6995abb0696d" />
+<img width="992" height="750" alt="university_boundary" src="https://github.com/user-attachments/assets/f733137d-08d2-4e2f-b436-6995abb0696d" />
 *   **University Admission AUC**: 0.9735
-  <img width="867" height="622" alt="university_roc" src="https://github.com/user-attachments/assets/cb7e0405-c29d-4eac-a17f-fb2d65f8350d" />
+<img width="867" height="622" alt="university_roc" src="https://github.com/user-attachments/assets/cb7e0405-c29d-4eac-a17f-fb2d65f8350d" />
 *   **Microchip Model**: ~83% Training Accuracy (with $\lambda=1$).
-  <img width="992" height="745" alt="microchip_boundary" src="https://github.com/user-attachments/assets/09353f91-e6b9-447f-a220-e2d59c36a999" />
+<img width="992" height="745" alt="microchip_boundary" src="https://github.com/user-attachments/assets/09353f91-e6b9-447f-a220-e2d59c36a999" />
 *   **Microchip QA AUC**: 0.9073
-  <img width="867" height="622" alt="microchip_roc" src="https://github.com/user-attachments/assets/f7d30eda-4353-454d-8219-fdec8d241ea1" />
+<img width="867" height="622" alt="microchip_roc" src="https://github.com/user-attachments/assets/f7d30eda-4353-454d-8219-fdec8d241ea1" />
 
 
 ---
